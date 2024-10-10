@@ -1,7 +1,6 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs } from 'expo-router';
 
-
 export default function TabLayout() {
   return (
     <Tabs screenOptions={{ tabBarActiveTintColor: 'chocolate', headerShown: false }}>
@@ -23,13 +22,6 @@ export default function TabLayout() {
         name="sandwich"
         options={{
           title: 'Sandwich',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
-        }}
-      />
-        <Tabs.Screen
-        name="camera"
-        options={{
-          title: 'Camera',
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
         }}
       />

@@ -27,9 +27,9 @@ export default function TabLayout() {
         }}
       />
         <Tabs.Screen
-        name="camera"
+        name="sandwich"
         options={{
-          title: 'Camera',
+          title: 'Sandwich',
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
         }}
       />

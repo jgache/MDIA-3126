@@ -1,5 +1,11 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs } from 'expo-router';
+import {Slot} from "expo-router";
+
+// Import your global CSS file
+import "../global.css"
+
+export default Slot
 
 
 export default function TabLayout() {
@@ -23,13 +29,6 @@ export default function TabLayout() {
         name="sandwich"
         options={{
           title: 'Sandwich',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
-        }}
-      />
-        <Tabs.Screen
-        name="camera"
-        options={{
-          title: 'Camera',
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
         }}
       />
